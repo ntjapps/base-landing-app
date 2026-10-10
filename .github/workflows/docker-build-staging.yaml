@@ -25,7 +25,7 @@ jobs:
         uses: docker/setup-qemu-action@v3
         if: env.REGISTRY != '' && env.IMAGE_NAME != ''
       - name: Setup Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
         if: env.REGISTRY != '' && env.IMAGE_NAME != ''
 
       - name: Login to GitHub Container Registry
