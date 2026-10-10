@@ -42,7 +42,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       - name: Build & Push Container
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         if: env.REGISTRY != '' && env.IMAGE_NAME != ''
         with:
           context: .
